@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="css/jouer.css">
+</head>
+<body>
+    <h1>eni - memory - profil</h1>
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">accueil</a></li>
+            <li><a href="inscription.html">s'inscrire</a></li>
+            <li><a href="connexion.html">se connecter</a></li>
+            <li><a href="profil.html">profil</a></li>
+            <li><a href="jouer.html">jouer</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="profil">
+            <h2>Profil</h2> 
+            <img class="interrogation" src="img/question.svg" alt="Icône de question">
+        </div>
+        <form id="profil">
+            <label for="nom">Nom d'utilisateur</label>
+            <input type="text" id="nom" name="nom" placeholder="3 caractères minimum" required>
+            <hr/>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="votre mail" required>
+            <hr/>
+            <label for="choiceGame">Choix du Memory</label>
+            <select id="choiceGame" name="choiceGame" class="choiceGame">
+                <option value="animauxAnimes">Animaux animés</option>
+                <option value="animaux">Animaux</option>
+                <option value="legumes">Légumes</option>
+                <option value="animauxDomestiques">Animaux Domestiques</option>
+            </select><br>
+            <img src="img/animauxAnimes/memory_detail_animaux_animes.png" alt="img animaux animés"><br>
+            
+            <label for="sizeGame">Taille du Memory</label><br>
+            <select name="Taillememory" id="selecttaille">
+                <option value="4x3">4x3</option>
+                <option value="4x4">4x4</option>
+                <option value="4x6">4x6</option>
+            </select>
+            <div class="bouton">
+                <button type="submit">Enregistrez Option</button>
+            </div>
+        </form>
+        <div class="lastScores">
+            <h3>Dernier scores :</h3>
+            <table>
+                <tr>
+                    <th>Pseudo</th>
+                    <th>Score</th>
+                    <th>Taille</th>
+                    <th>Choix Memory</th>
+                    <th>Date</th>
+                </tr>
+                <tr>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                </tr>
+            </table>
+        </div>
+    </main>
+
+
+
+
+
+
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>

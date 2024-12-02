@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: none;
+}
+.menu li{
+    list-style-type: none;
+}
+body{
+    background-color: rgba(36, 148, 163, 0.685);
+    font-family: "Gill Sans", sans-serif;
+}
+h1{
+    text-transform: uppercase;
+    font-size: 6rem;
+    color: whitesmoke;
+    text-align: center;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 40%;
+    border: solid 2px whitesmoke;
+    background-color: rgb(137, 137, 185);
+
+}
+
+a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.rules {
+    border: solid whitesmoke 2px;
+    background-color: rgb(137, 137, 185);
+    color: whitesmoke;
+    margin: 100px 100px;
+    padding: 30px;
+    border-radius: 20px;
+}
+h3 {
+    margin-bottom: 10px;
+}
+h2 {
+    margin-bottom: 10px;
+}

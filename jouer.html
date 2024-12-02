@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jouer</title>
+    <link rel="stylesheet" href="css/jouer.css">
+</head>
+<body>
+    <h1>eni - memory - Jouer</h1>
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">accueil</a></li>
+            <li><a href="inscription.html">s'inscrire</a></li>
+            <li><a href="connexion.html">se connecter</a></li>
+            <li><a href="profil.html">profil</a></li>
+            <li><a href="jouer.html">jouer</a></li>
+        </ul>
+    </nav>
+    
+    <h3>Derniers meilleurs scores</h3>
+    <div class="lastScores">
+        <table>
+            <tr>
+                <th>Pseudo</th>
+                <th>Score</th>
+                <th>Taille</th>
+                <th>Choix Memory</th>
+                <th>Date</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+    
+    <div class="text">
+        <p>Tentez de gagner avec le moins d'essais possible. <br>
+        Appuyez sur la <strong>barre d'espace</strong> pour relancer le jeu.<br>
+        Nombre de coup : 
+        </p> 
+        <p id="try">0</p>
+        
+    </div>
+
+    <div class="jeuMemory">
+        <div class="cartes">
+            <img src="img/memory-legume/1.svg" alt="legume 1" id="avant">
+            <img src="img/question.svg" alt="question mark" id="arriere">
+        </div>
+        <div class="cartes">
+            <img src="img/memory-legume/2.svg" alt="legume 2" id="avant">
+            <img src="img/question.svg" alt="question mark" id="arriere">
+        </div>
+        <div class="cartes">
+            <img src="img/memory-legume/3.svg" alt="legume 3" id="avant">
+            <img src="img/question.svg" alt="question mark" id="arriere">
+        </div>
+        <div class="cartes">
+            <img src="img/memory-legume/4.svg" alt="legume 4" id="avant">
+            <img src="img/question.svg" alt="question mark" id="arriere">
+        </div>
+        <div class="cartes">
+            <img src="img/memory-legume/5.svg" alt="legume 5" id="avant">
+            <img src="img/question.svg" alt="question mark" id="arriere">
+        </div>
+        <div class="cartes">
+            <img src="img/memory-legume/6.svg" alt="legume 6" id="avant">
+            <img src="img/question.svg" alt="question mark" id="arriere">
+        </div>
+        <div class="cartes">
+            <img src="img/memory-legume/1.svg" alt="legume 1" id="avant">
+            <img src="img/question.svg" alt="question mark" id="arriere">
+        </div>
+        <div class="cartes">
+            <img src="img/memory-legume/2.svg" alt="legume 2" id="avant">
+            <img src="img/question.svg" alt="question mark" id="arriere">
+        </div>
+        <div class="cartes">
+            <img src="img/memory-legume/3.svg" alt="legume 3" id="avant">
+            <img src="img/question.svg" alt="question mark" id="arriere">
+        </div>
+        <div class="cartes">
+            <img src="img/memory-legume/4.svg" alt="legume 4" id="avant">
+            <img src="img/question.svg" alt="question mark" id="arriere">
+        </div>
+        <div class="cartes">
+            <img src="img/memory-legume/5.svg" alt="legume 5" id="avant">
+            <img src="img/question.svg" alt="question mark" id="arriere">
+        </div>
+        <div class="cartes">
+            <img src="img/memory-legume/6.svg" alt="legume 6" id="avant">
+            <img src="img/question.svg" alt="question mark" id="arriere">
+        </div>
+
+    </div>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>

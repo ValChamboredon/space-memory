@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion</title>
+    <link rel="stylesheet" href="css/connexion.css">
+</head>
+<body>
+    <h1>eni - memory - connexion</h1>
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">accueil</a></li>
+            <li><a href="inscription.html">s'inscrire</a></li>
+            <li><a href="connexion.html">se connecter</a></li>
+            <li><a href="profil.html">profil</a></li>
+            <li><a href="jouer.html">jouer</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form id="connexion">
+            <h1>connectez-vous</h2>
+            <label for="email">Entrer votre email</label>
+            <input type="text" id="email" name="email" placeholder="votre mail" required>
+            <hr/>
+            <label for="mot_de_passe">Mot de passe</label>
+            <input type="password" id="mot_de_passe" name="password" placeholder="votre mot de passe" required>
+            <hr/>
+            <div class="bouton">
+                <button type="submit">Se connecter</button>
+                <button type="reset">Annuler</button>
+            </div>
+        </form>
+    </main>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
