@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style-type: none;
+}
+body{
+    background-color: rgba(36, 148, 163, 0.685);
+    font-family: "Gill Sans", sans-serif;
+}
+.menu a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+.menu li:hover {
+    background-color:  rgb(192, 192, 231);
+}
+
+h1{
+    text-transform: uppercase;
+    font-size: 5rem;
+    color: whitesmoke;
+    text-align: center;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 40%;
+    border: solid 2px whitesmoke;
+    background-color: rgb(137, 137, 185);
+
+}
+  
+
+.main-container {
+    grid-area: box;
+    position: absolute;
+    top:  50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background-color: rgb(137, 137, 185);
+    padding: 40px;
+    border: solid whitesmoke 2px;
+    border-radius: 20px;
+}
+  
+
+.main-container h1 {
+    margin-bottom: 40px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: whitesmoke;
+}
+  
+
+#connexion {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+  
+#connexion label {
+    font-size: 1.1rem;
+    color: whitesmoke;
+    text-align: left;
+}
+  
+#connexion input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #999;
+    border-radius: 5px;
+    outline: none;
+    background-color: #fff;
+    color: #000;
+    transition: border-color 0.3s ease-in-out;
+}
+  
+ 
+ 
+.bouton {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+  
+.bouton button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    background-color: rgba(36, 148, 163, 0.685);
+    color: whitesmoke;
+    transition: background-color 0.3s ease;
+}
+  
+.bouton button:hover {
+    background-color: rgb(192, 192, 231);
+}
+
+.main-container h2 {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    color: whitesmoke;
+}
+

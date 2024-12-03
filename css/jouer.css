@@ -1,0 +1,96 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*Navbar*/
+nav{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 40%;
+    border: solid 2px whitesmoke;
+    background-color: rgb(137, 137, 185);
+}
+
+a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+ul{
+    list-style-type: none;
+}
+/* Main container */
+.main-container {
+    border: solid whitesmoke 2px;
+    background-color: rgb(137, 137, 185);
+    color: whitesmoke;
+    margin: 0 500px;
+    padding: 20px;
+    border-radius: 20px;
+}
+body{
+    background-color: rgba(36, 148, 163, 0.685);
+    font-family: "Gill Sans", sans-serif;
+}
+h1{
+    text-transform: uppercase;
+    font-size: 5rem;
+    color: whitesmoke;
+    text-align: center;
+}
+.text{
+    
+    display: flex;
+    justify-content: center;
+}
+.text p {
+    line-height: 35px;
+    font-size: 1.1rem;
+}
+
+/* Partie jeu */
+.game {
+    width: 640px;
+    height: 640px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 1000px;
+}
+  
+.card {
+    width: calc(25% - 10px);
+    height: calc(33.333% - 10px);
+    margin: 5px;
+    position: relative;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
+}
+  
+.card.flip {
+    transform: rotateY(180deg);
+}
+  
+.front-face,
+.back-face {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    position: absolute;
+    border-radius: 5px;
+    background: #11314b;
+    backface-visibility: hidden;
+}
+  
+.front-face {
+    transform: rotateY(180deg);
+}

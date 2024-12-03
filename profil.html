@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil</title>
-    <link rel="stylesheet" href="css/jouer.css">
+    <link rel="stylesheet" href="css/profil.css">
 </head>
 <body>
     <h1>eni - memory - profil</h1>
@@ -17,18 +17,18 @@
             <li><a href="jouer.html">jouer</a></li>
         </ul>
     </nav>
-    <main>
+    <main class="main-container">
         <div class="profil">
             <h2>Profil</h2> 
-            <img class="interrogation" src="img/question.svg" alt="Icône de question">
+            <img id="interrogation" src="img/question.svg" alt="Icône de question">
         </div>
         <form id="profil">
-            <label for="nom">Nom d'utilisateur</label>
-            <input type="text" id="nom" name="nom" placeholder="3 caractères minimum" required>
-            <hr/>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="votre mail" required>
-            <hr/>
+            <label for="nom">Nom d'utilisateur</label><br>
+            <input type="text" id="nom" name="nom"required><br>
+           
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email"required><br>    
+        </form>  
             <label for="choiceGame">Choix du Memory</label>
             <select id="choiceGame" name="choiceGame" class="choiceGame">
                 <option value="animauxAnimes">Animaux animés</option>
@@ -36,7 +36,7 @@
                 <option value="legumes">Légumes</option>
                 <option value="animauxDomestiques">Animaux Domestiques</option>
             </select><br>
-            <img src="img/animauxAnimes/memory_detail_animaux_animes.png" alt="img animaux animés"><br>
+            <img id="img2" src="img/animauxAnimes/memory_detail_animaux_animes.png" alt="img animaux animés"><br>
             
             <label for="sizeGame">Taille du Memory</label><br>
             <select name="Taillememory" id="selecttaille">
@@ -47,26 +47,7 @@
             <div class="bouton">
                 <button type="submit">Enregistrez Option</button>
             </div>
-        </form>
-        <div class="lastScores">
-            <h3>Dernier scores :</h3>
-            <table>
-                <tr>
-                    <th>Pseudo</th>
-                    <th>Score</th>
-                    <th>Taille</th>
-                    <th>Choix Memory</th>
-                    <th>Date</th>
-                </tr>
-                <tr>
-                    <td>Data</td>
-                    <td>Data</td>
-                    <td>Data</td>
-                    <td>Data</td>
-                    <td>Data</td>
-                </tr>
-            </table>
-        </div>
+        
     </main>
 
 
