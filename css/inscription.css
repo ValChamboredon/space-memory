@@ -7,7 +7,7 @@ li{
     list-style-type: none;
 }
 body{
-    background-color: rgba(36, 148, 163, 0.685);
+    background-color: #d8e9ef;
     font-family: "Gill Sans", sans-serif;
 }
 .menu a{
@@ -17,20 +17,21 @@ body{
     text-transform: uppercase;
 }
 .menu li:hover {
-    background-color:  rgb(192, 192, 231);
+    background-color:  #e85a71;
 }
 
 h1{
+    margin-top: 50px;
+    margin-bottom: 20px;
     text-transform: uppercase;
-    font-size: 5rem;
-    color: whitesmoke;
+    font-size: 4rem;
+    color: rgb(100, 94, 94);
     text-align: center;
 }
 
 nav{
     display: flex;
     justify-content: center;
-    margin-bottom: 60px;
 }
 
 .menu{
@@ -39,7 +40,8 @@ nav{
     flex-direction: row;
     width: 40%;
     border: solid 2px whitesmoke;
-    background-color: rgb(137, 137, 185);
+    background-color: #4ea1d3;
+    border-radius: 20px;
 
 }
 
@@ -50,7 +52,7 @@ nav{
     left: 50%;
     transform: translate(-50%, -50%);
     width: 400px;
-    background-color: rgb(137, 137, 185);
+    background-color: #4ea1d3;
     padding: 40px;
     border: solid whitesmoke 2px;
     border-radius: 20px;
@@ -66,13 +68,15 @@ nav{
   
 .box input{
       padding: 10px 0;
-      margin-bottom: 30px;
+      margin-bottom: 15px;
+      padding-left: 10px;
 }
   
 .box textarea{
-      height: 80px;
-      padding: 10px 0;
-      margin-bottom: 40px;
+    padding-left: 10px;
+    height: 80px;
+    padding: 10px 0;
+    margin-bottom: 40px;
 }
   
 .box input, .box textarea {
@@ -84,30 +88,27 @@ nav{
       border-bottom: 2px solid #999;
 }
 
-  
-
-  
-
-
 .box form div label {
     display: block;
     font-size: 1.1rem;
     color: whitesmoke;
     margin-bottom: 5px;
 }
-
-
-input#submit:hover{
+#formulaire #submit:hover{
     background-color: rgb(192, 192, 231);
-    transition: background-color 0.3s ease;
 }
-.box input[type="submit"]{
+.box #submit{
     font-size: 0.9em;
     border-bottom: none;
     cursor: pointer;
-    background-color: rgba(36, 148, 163, 0.685);
+    background-color:  #e2566e;
     color: #FFF;
     margin-bottom: 0;
     text-transform: uppercase;
     border-radius: 5px;
+}
+#passwordHelp{
+    color: whitesmoke;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
 }

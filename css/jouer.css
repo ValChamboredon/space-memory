@@ -9,13 +9,17 @@ nav{
     justify-content: center;
     margin-bottom: 20px;
 }
+.menu li:hover {
+    background-color:  #e85a71;
+}
 .menu{
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
     width: 40%;
     border: solid 2px whitesmoke;
-    background-color: rgb(137, 137, 185);
+    background-color: #4ea1d3;
+    border-radius: 20px;
 }
 
 a{
@@ -30,20 +34,22 @@ ul{
 /* Main container */
 .main-container {
     border: solid whitesmoke 2px;
-    background-color: rgb(137, 137, 185);
+    background-color: #4ea1d3;
     color: whitesmoke;
     margin: 0 500px;
     padding: 20px;
     border-radius: 20px;
 }
 body{
-    background-color: rgba(36, 148, 163, 0.685);
+    background-color: #d8e9ef;
     font-family: "Gill Sans", sans-serif;
 }
 h1{
+    margin-top: 50px;
+    margin-bottom: 20px;
     text-transform: uppercase;
-    font-size: 5rem;
-    color: whitesmoke;
+    font-size: 4rem;
+    color: rgb(100, 94, 94);
     text-align: center;
 }
 .text{
@@ -55,7 +61,12 @@ h1{
     line-height: 35px;
     font-size: 1.1rem;
 }
-
+.compteur-container {
+    display: flex;
+    justify-content: center;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
 /* Partie jeu */
 .game {
     width: 640px;
@@ -71,7 +82,6 @@ h1{
     height: calc(33.333% - 10px);
     margin: 5px;
     position: relative;
-    transform: scale(1);
     transform-style: preserve-3d;
     transition: transform .5s;
 }
