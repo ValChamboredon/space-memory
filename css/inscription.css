@@ -42,16 +42,14 @@ nav{
     border: solid 2px whitesmoke;
     background-color: #4ea1d3;
     border-radius: 20px;
+    margin-bottom: 60px;
 }
 
 .box{
-    grid-area: box;
-    position: absolute;
-    top:  50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin: auto;
     width: 400px;
     background-color: #4ea1d3;
+    
     padding: 40px;
     border: solid whitesmoke 2px;
     border-radius: 20px;
@@ -80,7 +78,6 @@ nav{
   
 .box input, .box textarea {
       width: 100%;
-      box-sizing: border-box;
       box-shadow: none;
       outline: none;
       border: none;

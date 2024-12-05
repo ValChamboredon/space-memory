@@ -1,14 +1,13 @@
 const formLogin=document.getElementById("connexion")
 
-formLogin.addEventListener("submit", (event) =>  {
+formLogin.addEventListener("submit", (event) => {
     event.preventDefault();
-    const userData = JSON.parse(localStorage.getItem("userData")); //Json to JS Json=string JS=tableau/objet
+    const userData = JSON.parse(localStorage.getItem("userData")); 
     const loginEmail = document.getElementById("loginEmail").value;
     const loginPassword = document.getElementById("loginPassword").value;
+    let userFound = false; 
 
-    let userFound = false;  // Initialisation à false
-
-    // Parcours tous les utilisateurs pour vérifier les informations
+    //Parcourir user list
     for (let i = 0; i < userData.length; i++) {
     const user = userData[i];
   
@@ -16,24 +15,29 @@ formLogin.addEventListener("submit", (event) =>  {
     if (loginEmail === user.email && loginPassword === user.password) {
     userFound = true;  
     validator();  
-    break;  // On arrête la boucle dès qu'un utilisateur est trouvé
+    break; 
     }
     }
     // Aucun user 
     if (!userFound) errorText();
+    
 })
 
 function errorText(){
-  const loginInfos = document.getElementById("loginInfos");
-  loginInfos.style.color = "red";
-  loginInfos.textContent = "Email ou mot de passe incorrect.";
+    const loginInfos = document.getElementById("loginInfos");
+    loginInfos.style.color = "red";
+    loginInfos.textContent = "Email ou mot de passe incorrect.";
+    document.getElementById("connexion").classList.add("shake");
+    setTimeout(() => {
+      loginInfos.classList.remove("shake");
+    }, 1000);
 }
 
 function validator() {
-  loginInfos.style.color = "whitesmoke";
-  loginInfos.textContent = "Connexion réussie !";
-  setTimeout(() => {
-    document.location.href = "jouer.html";  // Redirection après une connexion réussie
-  }, 1500);
-  formLogin.reset();
+    loginInfos.style.color = "whitesmoke";
+    loginInfos.textContent = "Connexion réussie !";
+    setTimeout(() => {
+      document.location.href = "jouer.html"; 
+    }, 1500);
+    formLogin.reset();
 }
