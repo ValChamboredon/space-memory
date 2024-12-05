@@ -25,11 +25,10 @@
         <form id="profil">
             <label for="nom">Nom d'utilisateur</label><br>
             <input type="text" id="nom" name="nom"required><br>
-           
             <label for="email">Email</label><br>
             <input type="email" id="email" name="email"required><br>    
         </form>  
-            <label for="choiceGame">Choix du Memory</label>
+            <label id="test" for="choiceGame">Choix du Memory</label>
             <select id="choiceGame" name="choiceGame" class="choiceGame">
                 <option value="animauxAnimes">Animaux animés</option>
                 <option value="animaux">Animaux</option>
@@ -37,8 +36,7 @@
                 <option value="animauxDomestiques">Animaux Domestiques</option>
             </select><br>
             <img id="img2" src="img/animauxAnimes/memory_detail_animaux_animes.png" alt="img animaux animés"><br>
-            
-            <label for="sizeGame">Taille du Memory</label><br>
+            <label for="sizeGame" id="test">Taille du Memory</label><br>
             <select name="Taillememory" id="selecttaille">
                 <option value="4x3">4x3</option>
                 <option value="4x4">4x4</option>
@@ -47,15 +45,7 @@
             <div class="bouton">
                 <button type="submit">Enregistrez Option</button>
             </div>
-        
     </main>
-
-
-
-
-
-
-
     <script type="module" src="./js/app.js"></script>
 </body>
 </html>

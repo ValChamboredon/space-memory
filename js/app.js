@@ -1,11 +1,11 @@
 const cards = document.querySelectorAll('.card');
 
 let hasFlippedCard = false;
-let lockBoard = false;
-let firstCard, secondCard;
+let firstCard;
+let secondCard;
 let matchedCards = 0;
 let count=0;
-
+let lockBoard = false;
 //Reset des variables
 function reset(){
   hasFlippedCard = false; 
@@ -45,9 +45,8 @@ function  flipCard() {
   firstCard.removeEventListener('click', flipCard); 
   secondCard.removeEventListener('click', flipCard); 
 
-  matchedCards++; 
-
   // Victoire
+  matchedCards++; 
   if (matchedCards === 6) {
     setTimeout(() => {
       alert("Bravo ! Vous avez gagné en " + count + " coups !");
@@ -82,83 +81,6 @@ function keyPress(event) {
 // Events click et keyPress
 cards.forEach(card => card.addEventListener('click', flipCard));
 document.addEventListener('keydown', keyPress);
-
-// FORMULAIRE
-
-// Main function
-import { 
-  nameValidator,
-  emailValidator,
-  passwordValidator
- } from "./modules/validators.js";
-
-document.getElementById("formulaire").addEventListener("submit", (event) => {
-  event.preventDefault(); 
-
-  const name = document.getElementById("name").value;
-  const email = document.getElementById("email").value;
-  const password = document.getElementById("password").value;
-  const confirmPassword = document.getElementById("confirmPassword").value;
-
-  console.log(name,email,password,confirmPassword);
-
-  const errors = [];
-  
-  const userData = {
-    name: name,
-    email: email,
-    password: password,
-  };
-  // Prends en compte les datas déja existantes ou non du localStorage
-  const users = JSON.parse(localStorage.getItem('userData')) ?? [];
- 
-  if (!nameValidator(name)) errors.push("Le nom d'utilisateur doit comporter au moins 3 caractères.");
-  //User unique
-  if (users.some((user) =>user.name === name)) {
-    errors.push("Ce nom d'utilisateur est déja  utilisé");
-  }
-  if (!emailValidator(email)) errors.push("L'email est invalide.");
-  //Email unique
-  if (users.some((user) => user.email === email)) {
-  errors.push("Cet email est déjà utilisé.");
-  }
-  if (!passwordValidator(password)) errors.push("Le mot de passe doit contenir au moins 6 caractères, un chiffre et un caractère spécial.");
-  if (password !== confirmPassword) errors.push("Les mots de passes ne sont pas identiques")
-
-  const errorMessagesDiv = document.getElementById("errorMessages");
-
-  if (errors.length > 0) {
-    errorMessagesDiv.innerHTML = errors.join("<br>");
-  } else {
-  
-  users.push(userData)
-  // Update
-  localStorage.setItem('userData', JSON.stringify(users));
-    
-  errorMessagesDiv.style.color = "whitesmoke";
-  errorMessagesDiv.textContent = "Inscription réussie !";
-     
-  setTimeout(() => {
-    document.location.href="connexion.html";
-  }, 1500);
-
-    document.getElementById("formulaire").reset();
-}
-});
-
-// Security Password
-import {  
-  checkPasswordDifficulty,
-  difficultyPw
-} from "./modules/pwCheck.js";
-
-document.getElementById("password").addEventListener("input", function () {
-  const password = this.value;
-  const difficulty = checkPasswordDifficulty(password);
-  difficultyPw(difficulty);
-});
-
-
 
 
 

@@ -42,7 +42,6 @@ nav{
     border: solid 2px whitesmoke;
     background-color: #4ea1d3;
     border-radius: 20px;
-
 }
 
 .box{
@@ -111,4 +110,16 @@ nav{
     color: whitesmoke;
     font-size: 0.9rem;
     margin-bottom: 20px;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+  
+.shake {
+    animation: shake 0.5s ease;
 }
